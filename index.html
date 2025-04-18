@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    /* Basic Styling for Home Page */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 20px 30px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Initially hide the options */
+    .options {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to the Website!</h1>
+    <p>Click to Start:</p>
+
+    <!-- Start Button -->
+    <a href="javascript:void(0);" id="startButton" class="button">Start</a>
+
+    <!-- Hidden options (Anime, Games, Movies, Cartoons) -->
+    <div class="options" id="options">
+      <a href="anime.html" class="button">Anime</a>
+      <a href="games.html" class="button">Games</a>
+      <a href="movies.html" class="button">Movies</a>
+      <a href="cartoons.html" class="button">Cartoon</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
